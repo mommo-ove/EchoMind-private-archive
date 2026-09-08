@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# 环境变量（含敏感信息）
+.env
+
+# 运行数据默认忽略，仅保留可复现的知识与评测资产
+data/*
+!data/knowledge/
+!data/eval/
+data/knowledge/*
+data/eval/*
+!data/README.md
+!data/knowledge/campus_knowledge.json
+!data/eval/campus_golden.json
+!data/eval/campus_retrieval_golden.json
+!data/eval/intent_calibration_golden.json
+!data/eval/hallucination_adversarial.json
+!data/eval/results/
+data/eval/results/*
+!data/eval/results/hallucination_baseline_validation.json
+!data/eval/results/hallucination_numeric_validation.json
+!data/eval/results/hallucination_test_latest.json
+logs/
+
+# IDE
+.idea/
+.vscode/
+.worktrees/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker 构建产物
+build-image*.sh
+
+# ChromaDB 本地数据
+*.sqlite3
+
+# 备份文件
+*~
+*.bak
+docker-compose(1).yml

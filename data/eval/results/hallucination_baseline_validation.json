@@ -1,0 +1,534 @@
+{
+  "total": 40,
+  "confusion_matrix": {
+    "tp": 17,
+    "fp": 0,
+    "tn": 13,
+    "fn": 10
+  },
+  "metrics": {
+    "precision": 1.0,
+    "recall": 0.62963,
+    "f1": 0.772727,
+    "false_negative_rate": 0.37037,
+    "accuracy": 0.75
+  },
+  "by_type": {
+    "entity_fabrication": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0,
+      "total": 6
+    },
+    "missing_citation": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0,
+      "total": 5
+    },
+    "numeric_mismatch": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 0,
+      "fn": 6,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": 1.0,
+      "accuracy": 0.0,
+      "total": 6
+    },
+    "status_mismatch": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0,
+      "total": 6
+    },
+    "supported": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 13,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0,
+      "total": 13
+    },
+    "unsupported_causal_claim": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 0,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": 1.0,
+      "accuracy": 0.0,
+      "total": 4
+    }
+  },
+  "results": [
+    {
+      "id": "hallucination-002",
+      "type": "entity_fabrication",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "unsupported_ticket_id"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-007",
+      "type": "entity_fabrication",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "unsupported_ticket_id"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-012",
+      "type": "entity_fabrication",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "unsupported_ticket_id"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-017",
+      "type": "entity_fabrication",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "unsupported_ticket_id"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-022",
+      "type": "entity_fabrication",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "unsupported_ticket_id"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-027",
+      "type": "entity_fabrication",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "unsupported_ticket_id"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-032",
+      "type": "status_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "conflicting_status"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-037",
+      "type": "status_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "conflicting_status"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-042",
+      "type": "status_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "conflicting_status"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-047",
+      "type": "status_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "conflicting_status"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-052",
+      "type": "status_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "conflicting_status"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-057",
+      "type": "status_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "conflicting_status"
+      ],
+      "checked_claims": 2
+    },
+    {
+      "id": "hallucination-062",
+      "type": "missing_citation",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "missing_citation"
+      ],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-067",
+      "type": "missing_citation",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "missing_citation"
+      ],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-072",
+      "type": "missing_citation",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "missing_citation"
+      ],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-077",
+      "type": "missing_citation",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "missing_citation"
+      ],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-082",
+      "type": "missing_citation",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": true,
+      "outcome": "tp",
+      "issue_codes": [
+        "missing_citation"
+      ],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-087",
+      "type": "numeric_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-092",
+      "type": "numeric_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-097",
+      "type": "numeric_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-102",
+      "type": "numeric_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-107",
+      "type": "numeric_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-112",
+      "type": "numeric_mismatch",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-117",
+      "type": "unsupported_causal_claim",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-122",
+      "type": "unsupported_causal_claim",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-127",
+      "type": "unsupported_causal_claim",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-132",
+      "type": "unsupported_causal_claim",
+      "split": "validation",
+      "actual_hallucination": true,
+      "predicted_hallucination": false,
+      "outcome": "fn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-137",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-142",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-147",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-152",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-157",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-162",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-167",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-172",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-177",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-182",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-187",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-192",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    },
+    {
+      "id": "hallucination-197",
+      "type": "supported",
+      "split": "validation",
+      "actual_hallucination": false,
+      "predicted_hallucination": false,
+      "outcome": "tn",
+      "issue_codes": [],
+      "checked_claims": 1
+    }
+  ],
+  "metadata": {
+    "name": "EchoMind synthetic adversarial grounding benchmark",
+    "synthetic": true,
+    "scope": "Rule-scope benchmark for citation, ticket, status, numeric, and unsupported causal claims; not real production traffic.",
+    "count": 200,
+    "split": "60/20/20 deterministic stratification"
+  },
+  "split": "validation"
+}

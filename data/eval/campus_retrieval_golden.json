@@ -1,0 +1,1882 @@
+{
+  "schema_version": 1,
+  "description": "EchoMind校园知识库检索评测集；不调用LLM，避免与端到端生成评测混用。",
+  "corpus_document_count": 20,
+  "case_count": 140,
+  "corpus": [
+    {
+      "context_id": "a32fdfcd136bb0c6df13a0b7cf12f73f",
+      "title": "校园网401认证失败处理"
+    },
+    {
+      "context_id": "4b1f2158f5de5598656eab280cea109f",
+      "title": "校园网403权限异常处理"
+    },
+    {
+      "context_id": "3095fb8d1cf577ba1eef438f9e22b7fc",
+      "title": "校园网DNS与代理排查"
+    },
+    {
+      "context_id": "34dad8a6160854444c2441a0a5401b45",
+      "title": "宿舍区域断网排查"
+    },
+    {
+      "context_id": "3a952d06b6477ad6a6d34fe5edac9021",
+      "title": "校园网速度慢与频繁掉线"
+    },
+    {
+      "context_id": "b9b756369b3e969f91779f993fdbb8b0",
+      "title": "新设备接入校园网"
+    },
+    {
+      "context_id": "bfc05b60e089697361629713589b0ecb",
+      "title": "校园网维护窗口说明"
+    },
+    {
+      "context_id": "b72bdc6b05df1e79fc5510ba6d1cfc6b",
+      "title": "校园卡重复扣款核验"
+    },
+    {
+      "context_id": "7eef1e454f12160e8ce247ffae20e5b1",
+      "title": "校园卡消费记录查询"
+    },
+    {
+      "context_id": "dfa59cfbbfed4deba53caadee0cc7adb",
+      "title": "校园卡充值未到账"
+    },
+    {
+      "context_id": "22ed0949c007a96f10f4779fcb6ec723",
+      "title": "校园卡挂失与补办"
+    },
+    {
+      "context_id": "e1f642226c3cb95273a95a9fede27959",
+      "title": "校园卡退款与冲正说明"
+    },
+    {
+      "context_id": "4ac37edf665ba6ca2700d2a9b11c9a2e",
+      "title": "创建校园服务工单"
+    },
+    {
+      "context_id": "5123124c1305c335422a4760b35f0ce4",
+      "title": "工单状态与流转"
+    },
+    {
+      "context_id": "594c921f78bada468d12a85fb8561ad8",
+      "title": "工单查询与用户隔离"
+    },
+    {
+      "context_id": "93a2c3df0a900d4559c874d3af878331",
+      "title": "人工升级与紧急事件"
+    },
+    {
+      "context_id": "6de07143bbf7f99e748ce57c471736a9",
+      "title": "校园服务隐私与凭据安全"
+    },
+    {
+      "context_id": "2d48133b4918de8fcb3208f56f7e3c22",
+      "title": "账号锁定与密码重置"
+    },
+    {
+      "context_id": "2baa3c8462d162f0b0c5af4d253e3756",
+      "title": "投诉与服务反馈处理"
+    },
+    {
+      "context_id": "f53020aed73a02f80262cae99df524e6",
+      "title": "技术与账单复合问题处理"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "single-01-1",
+      "question": "校园网登录一直提示401该怎么处理？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      },
+      "reference_titles": [
+        "校园网401认证失败处理"
+      ]
+    },
+    {
+      "case_id": "single-01-2",
+      "question": "认证页说登录状态失效，我应该先清理什么？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      },
+      "reference_titles": [
+        "校园网401认证失败处理"
+      ]
+    },
+    {
+      "case_id": "single-01-3",
+      "question": "宿舍WiFi能连上但认证报401，能帮我排查吗？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      },
+      "reference_titles": [
+        "校园网401认证失败处理"
+      ]
+    },
+    {
+      "case_id": "single-01-4",
+      "question": "换了设备之后校网401，是账号密码错了吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      },
+      "reference_titles": [
+        "校园网401认证失败处理"
+      ]
+    },
+    {
+      "case_id": "single-01-5",
+      "question": "校园网又401了，我退出认证再重连还是不行。",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      },
+      "reference_titles": [
+        "校园网401认证失败处理"
+      ]
+    },
+    {
+      "case_id": "single-02-1",
+      "question": "校园网认证后出现403是什么意思？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4b1f2158f5de5598656eab280cea109f": 3.0
+      },
+      "reference_titles": [
+        "校园网403权限异常处理"
+      ]
+    },
+    {
+      "case_id": "single-02-2",
+      "question": "账号能识别但提示没有访问权限怎么办？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4b1f2158f5de5598656eab280cea109f": 3.0
+      },
+      "reference_titles": [
+        "校园网403权限异常处理"
+      ]
+    },
+    {
+      "case_id": "single-02-3",
+      "question": "连接访客网后403，是不是网络选错了？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4b1f2158f5de5598656eab280cea109f": 3.0
+      },
+      "reference_titles": [
+        "校园网403权限异常处理"
+      ]
+    },
+    {
+      "case_id": "single-02-4",
+      "question": "设备数量超限会导致校园网403吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4b1f2158f5de5598656eab280cea109f": 3.0
+      },
+      "reference_titles": [
+        "校园网403权限异常处理"
+      ]
+    },
+    {
+      "case_id": "single-02-5",
+      "question": "校网显示403，反复改密码有用吗？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4b1f2158f5de5598656eab280cea109f": 3.0
+      },
+      "reference_titles": [
+        "校园网403权限异常处理"
+      ]
+    },
+    {
+      "case_id": "single-03-1",
+      "question": "WiFi连上了但所有网页都打不开怎么排查？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3095fb8d1cf577ba1eef438f9e22b7fc": 3.0
+      },
+      "reference_titles": [
+        "校园网DNS与代理排查"
+      ]
+    },
+    {
+      "case_id": "single-03-2",
+      "question": "开着VPN时校园网访问不了网页要怎么办？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3095fb8d1cf577ba1eef438f9e22b7fc": 3.0
+      },
+      "reference_titles": [
+        "校园网DNS与代理排查"
+      ]
+    },
+    {
+      "case_id": "single-03-3",
+      "question": "只有一个网站打不开，是DNS坏了吗？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3095fb8d1cf577ba1eef438f9e22b7fc": 3.0
+      },
+      "reference_titles": [
+        "校园网DNS与代理排查"
+      ]
+    },
+    {
+      "case_id": "single-03-4",
+      "question": "浏览器代理扩展会影响校园网访问吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3095fb8d1cf577ba1eef438f9e22b7fc": 3.0
+      },
+      "reference_titles": [
+        "校园网DNS与代理排查"
+      ]
+    },
+    {
+      "case_id": "single-03-5",
+      "question": "校园网能连接但域名都解析失败咋整？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3095fb8d1cf577ba1eef438f9e22b7fc": 3.0
+      },
+      "reference_titles": [
+        "校园网DNS与代理排查"
+      ]
+    },
+    {
+      "case_id": "single-04-1",
+      "question": "我们整层宿舍都断网了应该提供哪些信息？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0
+      },
+      "reference_titles": [
+        "宿舍区域断网排查"
+      ]
+    },
+    {
+      "case_id": "single-04-2",
+      "question": "怎么判断断网只影响我还是整栋楼？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0
+      },
+      "reference_titles": [
+        "宿舍区域断网排查"
+      ]
+    },
+    {
+      "case_id": "single-04-3",
+      "question": "同寝室几个人同时没网，先查设备还是服务状态？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0
+      },
+      "reference_titles": [
+        "宿舍区域断网排查"
+      ]
+    },
+    {
+      "case_id": "single-04-4",
+      "question": "宿舍楼大面积断网需要直接建工单吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0
+      },
+      "reference_titles": [
+        "宿舍区域断网排查"
+      ]
+    },
+    {
+      "case_id": "single-04-5",
+      "question": "三号宿舍楼从昨晚开始没网，该怎样报修？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0
+      },
+      "reference_titles": [
+        "宿舍区域断网排查"
+      ]
+    },
+    {
+      "case_id": "single-05-1",
+      "question": "校园网特别慢还总掉线要记录哪些指标？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3a952d06b6477ad6a6d34fe5edac9021": 3.0
+      },
+      "reference_titles": [
+        "校园网速度慢与频繁掉线"
+      ]
+    },
+    {
+      "case_id": "single-05-2",
+      "question": "晚上网速变慢，怎么判断是不是高峰拥堵？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3a952d06b6477ad6a6d34fe5edac9021": 3.0
+      },
+      "reference_titles": [
+        "校园网速度慢与频繁掉线"
+      ]
+    },
+    {
+      "case_id": "single-05-3",
+      "question": "只有我的电脑网速慢，应该先检查什么？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3a952d06b6477ad6a6d34fe5edac9021": 3.0
+      },
+      "reference_titles": [
+        "校园网速度慢与频繁掉线"
+      ]
+    },
+    {
+      "case_id": "single-05-4",
+      "question": "同一区域很多人都卡顿，要怎样反馈给维护人员？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3a952d06b6477ad6a6d34fe5edac9021": 3.0
+      },
+      "reference_titles": [
+        "校园网速度慢与频繁掉线"
+      ]
+    },
+    {
+      "case_id": "single-05-5",
+      "question": "校网延迟高丢包严重，报障时要带什么数据？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "3a952d06b6477ad6a6d34fe5edac9021": 3.0
+      },
+      "reference_titles": [
+        "校园网速度慢与频繁掉线"
+      ]
+    },
+    {
+      "case_id": "single-06-1",
+      "question": "新买的电脑第一次怎么连校园网？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b9b756369b3e969f91779f993fdbb8b0": 3.0
+      },
+      "reference_titles": [
+        "新设备接入校园网"
+      ]
+    },
+    {
+      "case_id": "single-06-2",
+      "question": "新手机连接WiFi后不弹认证页怎么办？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b9b756369b3e969f91779f993fdbb8b0": 3.0
+      },
+      "reference_titles": [
+        "新设备接入校园网"
+      ]
+    },
+    {
+      "case_id": "single-06-3",
+      "question": "可以借同学账号给我的新设备认证吗？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b9b756369b3e969f91779f993fdbb8b0": 3.0
+      },
+      "reference_titles": [
+        "新设备接入校园网"
+      ]
+    },
+    {
+      "case_id": "single-06-4",
+      "question": "物联网设备接校园网要遵守什么规则？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b9b756369b3e969f91779f993fdbb8b0": 3.0
+      },
+      "reference_titles": [
+        "新设备接入校园网"
+      ]
+    },
+    {
+      "case_id": "single-06-5",
+      "question": "首次接入时怎样确认认证页面是官方的？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b9b756369b3e969f91779f993fdbb8b0": 3.0
+      },
+      "reference_titles": [
+        "新设备接入校园网"
+      ]
+    },
+    {
+      "case_id": "single-07-1",
+      "question": "校园网维护期间认证失败正常吗？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "bfc05b60e089697361629713589b0ecb": 3.0
+      },
+      "reference_titles": [
+        "校园网维护窗口说明"
+      ]
+    },
+    {
+      "case_id": "single-07-2",
+      "question": "怎么确认现在是不是学校计划维护？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "bfc05b60e089697361629713589b0ecb": 3.0
+      },
+      "reference_titles": [
+        "校园网维护窗口说明"
+      ]
+    },
+    {
+      "case_id": "single-07-3",
+      "question": "公告结束后网络还没恢复应该怎么办？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "bfc05b60e089697361629713589b0ecb": 3.0
+      },
+      "reference_titles": [
+        "校园网维护窗口说明"
+      ]
+    },
+    {
+      "case_id": "single-07-4",
+      "question": "没有实时状态时能直接说校园网正在维护吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "bfc05b60e089697361629713589b0ecb": 3.0
+      },
+      "reference_titles": [
+        "校园网维护窗口说明"
+      ]
+    },
+    {
+      "case_id": "single-07-5",
+      "question": "维护窗口可能影响哪些校园网络服务？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "bfc05b60e089697361629713589b0ecb": 3.0
+      },
+      "reference_titles": [
+        "校园网维护窗口说明"
+      ]
+    },
+    {
+      "case_id": "single-08-1",
+      "question": "食堂好像重复扣了两次款，怎么核验？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0
+      },
+      "reference_titles": [
+        "校园卡重复扣款核验"
+      ]
+    },
+    {
+      "case_id": "single-08-2",
+      "question": "两笔金额相同就一定是重复扣款吗？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0
+      },
+      "reference_titles": [
+        "校园卡重复扣款核验"
+      ]
+    },
+    {
+      "case_id": "single-08-3",
+      "question": "校园卡重复消费需要比较哪些交易字段？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0
+      },
+      "reference_titles": [
+        "校园卡重复扣款核验"
+      ]
+    },
+    {
+      "case_id": "single-08-4",
+      "question": "发现疑似重复扣款后可以直接承诺退款吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0
+      },
+      "reference_titles": [
+        "校园卡重复扣款核验"
+      ]
+    },
+    {
+      "case_id": "single-08-5",
+      "question": "同一分钟被扣两笔钱，我该走什么处理流程？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0
+      },
+      "reference_titles": [
+        "校园卡重复扣款核验"
+      ]
+    },
+    {
+      "case_id": "single-09-1",
+      "question": "怎么查我最近七天的校园卡消费记录？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      },
+      "reference_titles": [
+        "校园卡消费记录查询"
+      ]
+    },
+    {
+      "case_id": "single-09-2",
+      "question": "消费明细应该显示哪些字段？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      },
+      "reference_titles": [
+        "校园卡消费记录查询"
+      ]
+    },
+    {
+      "case_id": "single-09-3",
+      "question": "没查到校园卡交易时系统应该怎么回答？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      },
+      "reference_titles": [
+        "校园卡消费记录查询"
+      ]
+    },
+    {
+      "case_id": "single-09-4",
+      "question": "能不能帮我查另一个同学的校园卡流水？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      },
+      "reference_titles": [
+        "校园卡消费记录查询"
+      ]
+    },
+    {
+      "case_id": "single-09-5",
+      "question": "校园卡账单查询为什么必须限制为当前用户？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      },
+      "reference_titles": [
+        "校园卡消费记录查询"
+      ]
+    },
+    {
+      "case_id": "single-10-1",
+      "question": "校园卡充值成功但余额没变怎么办？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "dfa59cfbbfed4deba53caadee0cc7adb": 3.0
+      },
+      "reference_titles": [
+        "校园卡充值未到账"
+      ]
+    },
+    {
+      "case_id": "single-10-2",
+      "question": "充值未到账需要准备哪些交易信息？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "dfa59cfbbfed4deba53caadee0cc7adb": 3.0
+      },
+      "reference_titles": [
+        "校园卡充值未到账"
+      ]
+    },
+    {
+      "case_id": "single-10-3",
+      "question": "支付平台已经扣款，学校卡里还没有钱怎么处理？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "dfa59cfbbfed4deba53caadee0cc7adb": 3.0
+      },
+      "reference_titles": [
+        "校园卡充值未到账"
+      ]
+    },
+    {
+      "case_id": "single-10-4",
+      "question": "充值异常时客服可以索要短信验证码吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "dfa59cfbbfed4deba53caadee0cc7adb": 3.0
+      },
+      "reference_titles": [
+        "校园卡充值未到账"
+      ]
+    },
+    {
+      "case_id": "single-10-5",
+      "question": "怎样区分充值处理中、成功未入账和支付失败？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "dfa59cfbbfed4deba53caadee0cc7adb": 3.0
+      },
+      "reference_titles": [
+        "校园卡充值未到账"
+      ]
+    },
+    {
+      "case_id": "single-11-1",
+      "question": "校园卡丢了应该先挂失还是先补办？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "22ed0949c007a96f10f4779fcb6ec723": 3.0
+      },
+      "reference_titles": [
+        "校园卡挂失与补办"
+      ]
+    },
+    {
+      "case_id": "single-11-2",
+      "question": "Agent能直接替我把校园卡挂失吗？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "22ed0949c007a96f10f4779fcb6ec723": 3.0
+      },
+      "reference_titles": [
+        "校园卡挂失与补办"
+      ]
+    },
+    {
+      "case_id": "single-11-3",
+      "question": "补办校园卡一般需要做身份核验吗？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "22ed0949c007a96f10f4779fcb6ec723": 3.0
+      },
+      "reference_titles": [
+        "校园卡挂失与补办"
+      ]
+    },
+    {
+      "case_id": "single-11-4",
+      "question": "为了补卡可以在聊天里发送身份证照片吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "22ed0949c007a96f10f4779fcb6ec723": 3.0
+      },
+      "reference_titles": [
+        "校园卡挂失与补办"
+      ]
+    },
+    {
+      "case_id": "single-11-5",
+      "question": "校园卡遗失后怎样降低被冒用风险？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "22ed0949c007a96f10f4779fcb6ec723": 3.0
+      },
+      "reference_titles": [
+        "校园卡挂失与补办"
+      ]
+    },
+    {
+      "case_id": "single-12-1",
+      "question": "校园卡异常扣款的退款和冲正有什么流程？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "e1f642226c3cb95273a95a9fede27959": 3.0
+      },
+      "reference_titles": [
+        "校园卡退款与冲正说明"
+      ]
+    },
+    {
+      "case_id": "single-12-2",
+      "question": "核验前能保证退款多久到账吗？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "e1f642226c3cb95273a95a9fede27959": 3.0
+      },
+      "reference_titles": [
+        "校园卡退款与冲正说明"
+      ]
+    },
+    {
+      "case_id": "single-12-3",
+      "question": "扣款撤销、冲正和余额返还有什么区别？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "e1f642226c3cb95273a95a9fede27959": 3.0
+      },
+      "reference_titles": [
+        "校园卡退款与冲正说明"
+      ]
+    },
+    {
+      "case_id": "single-12-4",
+      "question": "申请校园卡退款需要保留哪些交易凭证？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "e1f642226c3cb95273a95a9fede27959": 3.0
+      },
+      "reference_titles": [
+        "校园卡退款与冲正说明"
+      ]
+    },
+    {
+      "case_id": "single-12-5",
+      "question": "异常消费处理为什么还要核对商户结算状态？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "e1f642226c3cb95273a95a9fede27959": 3.0
+      },
+      "reference_titles": [
+        "校园卡退款与冲正说明"
+      ]
+    },
+    {
+      "case_id": "single-13-1",
+      "question": "创建校园服务工单前需要确认哪些内容？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      },
+      "reference_titles": [
+        "创建校园服务工单"
+      ]
+    },
+    {
+      "case_id": "single-13-2",
+      "question": "报修描述怎样写才方便技术人员复现？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      },
+      "reference_titles": [
+        "创建校园服务工单"
+      ]
+    },
+    {
+      "case_id": "single-13-3",
+      "question": "用户没明确同意时可以自动创建工单吗？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      },
+      "reference_titles": [
+        "创建校园服务工单"
+      ]
+    },
+    {
+      "case_id": "single-13-4",
+      "question": "重复点击提交为什么不应该生成两张工单？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      },
+      "reference_titles": [
+        "创建校园服务工单"
+      ]
+    },
+    {
+      "case_id": "single-13-5",
+      "question": "工单描述里能不能附上密码和完整Token？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      },
+      "reference_titles": [
+        "创建校园服务工单"
+      ]
+    },
+    {
+      "case_id": "single-14-1",
+      "question": "OPEN、PROCESSING和RESOLVED分别表示什么？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "5123124c1305c335422a4760b35f0ce4": 3.0
+      },
+      "reference_titles": [
+        "工单状态与流转"
+      ]
+    },
+    {
+      "case_id": "single-14-2",
+      "question": "校园工单允许按照什么顺序更新状态？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "5123124c1305c335422a4760b35f0ce4": 3.0
+      },
+      "reference_titles": [
+        "工单状态与流转"
+      ]
+    },
+    {
+      "case_id": "single-14-3",
+      "question": "已解决的工单能直接退回OPEN吗？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "5123124c1305c335422a4760b35f0ce4": 3.0
+      },
+      "reference_titles": [
+        "工单状态与流转"
+      ]
+    },
+    {
+      "case_id": "single-14-4",
+      "question": "谁有权限把工单改成处理中？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "5123124c1305c335422a4760b35f0ce4": 3.0
+      },
+      "reference_titles": [
+        "工单状态与流转"
+      ]
+    },
+    {
+      "case_id": "single-14-5",
+      "question": "工单现在显示PROCESSING说明到哪一步了？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "5123124c1305c335422a4760b35f0ce4": 3.0
+      },
+      "reference_titles": [
+        "工单状态与流转"
+      ]
+    },
+    {
+      "case_id": "single-15-1",
+      "question": "为什么查工单必须使用后端认证得到的用户ID？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "594c921f78bada468d12a85fb8561ad8": 3.0
+      },
+      "reference_titles": [
+        "工单查询与用户隔离"
+      ]
+    },
+    {
+      "case_id": "single-15-2",
+      "question": "知道别人的工单编号就能查看内容吗？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "594c921f78bada468d12a85fb8561ad8": 3.0
+      },
+      "reference_titles": [
+        "工单查询与用户隔离"
+      ]
+    },
+    {
+      "case_id": "single-15-3",
+      "question": "查不到工单时为什么统一返回不存在或无权限？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "594c921f78bada468d12a85fb8561ad8": 3.0
+      },
+      "reference_titles": [
+        "工单查询与用户隔离"
+      ]
+    },
+    {
+      "case_id": "single-15-4",
+      "question": "LLM参数里传入的user_id可以直接信任吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "594c921f78bada468d12a85fb8561ad8": 3.0
+      },
+      "reference_titles": [
+        "工单查询与用户隔离"
+      ]
+    },
+    {
+      "case_id": "single-15-5",
+      "question": "系统如何防止用户越权查看他人的报修单？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "594c921f78bada468d12a85fb8561ad8": 3.0
+      },
+      "reference_titles": [
+        "工单查询与用户隔离"
+      ]
+    },
+    {
+      "case_id": "single-16-1",
+      "question": "哪些情况需要标记escalated=true？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "93a2c3df0a900d4559c874d3af878331": 3.0
+      },
+      "reference_titles": [
+        "人工升级与紧急事件"
+      ]
+    },
+    {
+      "case_id": "single-16-2",
+      "question": "标记需要人工介入就等于已经接通客服了吗？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "93a2c3df0a900d4559c874d3af878331": 3.0
+      },
+      "reference_titles": [
+        "人工升级与紧急事件"
+      ]
+    },
+    {
+      "case_id": "single-16-3",
+      "question": "用户强烈要求转人工时系统应该怎么处理？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "93a2c3df0a900d4559c874d3af878331": 3.0
+      },
+      "reference_titles": [
+        "人工升级与紧急事件"
+      ]
+    },
+    {
+      "case_id": "single-16-4",
+      "question": "遇到CRITICAL紧急事件可以创建高优先级工单吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "93a2c3df0a900d4559c874d3af878331": 3.0
+      },
+      "reference_titles": [
+        "人工升级与紧急事件"
+      ]
+    },
+    {
+      "case_id": "single-16-5",
+      "question": "演示环境的人工升级和生产环境有什么差别？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "93a2c3df0a900d4559c874d3af878331": 3.0
+      },
+      "reference_titles": [
+        "人工升级与紧急事件"
+      ]
+    },
+    {
+      "case_id": "single-17-1",
+      "question": "校园服务Agent绝对不能索取哪些敏感信息？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "single-17-2",
+      "question": "用户身份为什么必须来自后端可信上下文？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "single-17-3",
+      "question": "日志和评测数据里应该怎样保护个人隐私？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "single-17-4",
+      "question": "可以把完整银行卡号和验证码发给客服核验吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "single-17-5",
+      "question": "演示系统能不能导入真实学生的交易流水？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "single-18-1",
+      "question": "校园账号连续登录失败被锁了怎么办？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2d48133b4918de8fcb3208f56f7e3c22": 3.0
+      },
+      "reference_titles": [
+        "账号锁定与密码重置"
+      ]
+    },
+    {
+      "case_id": "single-18-2",
+      "question": "客服可以帮我找回旧密码吗？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2d48133b4918de8fcb3208f56f7e3c22": 3.0
+      },
+      "reference_titles": [
+        "账号锁定与密码重置"
+      ]
+    },
+    {
+      "case_id": "single-18-3",
+      "question": "密码重置后仍无法登录应该记录什么信息？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2d48133b4918de8fcb3208f56f7e3c22": 3.0
+      },
+      "reference_titles": [
+        "账号锁定与密码重置"
+      ]
+    },
+    {
+      "case_id": "single-18-4",
+      "question": "账号锁定时可以把验证码发给Agent处理吗？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2d48133b4918de8fcb3208f56f7e3c22": 3.0
+      },
+      "reference_titles": [
+        "账号锁定与密码重置"
+      ]
+    },
+    {
+      "case_id": "single-18-5",
+      "question": "怎么通过学校官方渠道重置校园网密码？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2d48133b4918de8fcb3208f56f7e3c22": 3.0
+      },
+      "reference_titles": [
+        "账号锁定与密码重置"
+      ]
+    },
+    {
+      "case_id": "single-19-1",
+      "question": "我想投诉校园服务，系统应该先问什么？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0
+      },
+      "reference_titles": [
+        "投诉与服务反馈处理"
+      ]
+    },
+    {
+      "case_id": "single-19-2",
+      "question": "处理投诉时能在没有核验前承诺赔偿吗？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0
+      },
+      "reference_titles": [
+        "投诉与服务反馈处理"
+      ]
+    },
+    {
+      "case_id": "single-19-3",
+      "question": "一般服务反馈应该由哪个Agent说明？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0
+      },
+      "reference_titles": [
+        "投诉与服务反馈处理"
+      ]
+    },
+    {
+      "case_id": "single-19-4",
+      "question": "投诉涉及持续网络故障时要不要转专业Agent？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0
+      },
+      "reference_titles": [
+        "投诉与服务反馈处理"
+      ]
+    },
+    {
+      "case_id": "single-19-5",
+      "question": "用户坚持要求真人处理投诉时该怎么办？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0
+      },
+      "reference_titles": [
+        "投诉与服务反馈处理"
+      ]
+    },
+    {
+      "case_id": "single-20-1",
+      "question": "校园网登录失败还被重复扣款，应该由谁处理？",
+      "category": "single_document",
+      "difficulty": "direct",
+      "answerable": true,
+      "reference_context_relevance": {
+        "f53020aed73a02f80262cae99df524e6": 3.0
+      },
+      "reference_titles": [
+        "技术与账单复合问题处理"
+      ]
+    },
+    {
+      "case_id": "single-20-2",
+      "question": "一句话同时包含技术和账单问题时能并行处理吗？",
+      "category": "single_document",
+      "difficulty": "paraphrase",
+      "answerable": true,
+      "reference_context_relevance": {
+        "f53020aed73a02f80262cae99df524e6": 3.0
+      },
+      "reference_titles": [
+        "技术与账单复合问题处理"
+      ]
+    },
+    {
+      "case_id": "single-20-3",
+      "question": "TechnicalAgent和BillingAgent的结果要怎样合并？",
+      "category": "single_document",
+      "difficulty": "colloquial",
+      "answerable": true,
+      "reference_context_relevance": {
+        "f53020aed73a02f80262cae99df524e6": 3.0
+      },
+      "reference_titles": [
+        "技术与账单复合问题处理"
+      ]
+    },
+    {
+      "case_id": "single-20-4",
+      "question": "又连不上网又有异常消费，是否要识别两个意图？",
+      "category": "single_document",
+      "difficulty": "noisy",
+      "answerable": true,
+      "reference_context_relevance": {
+        "f53020aed73a02f80262cae99df524e6": 3.0
+      },
+      "reference_titles": [
+        "技术与账单复合问题处理"
+      ]
+    },
+    {
+      "case_id": "single-20-5",
+      "question": "复合问题里还要求马上转人工时哪个流程优先？",
+      "category": "single_document",
+      "difficulty": "boundary",
+      "answerable": true,
+      "reference_context_relevance": {
+        "f53020aed73a02f80262cae99df524e6": 3.0
+      },
+      "reference_titles": [
+        "技术与账单复合问题处理"
+      ]
+    },
+    {
+      "case_id": "composite-01",
+      "question": "宿舍整层断网且正值维护时间，我该先看公告还是直接报修？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0,
+        "bfc05b60e089697361629713589b0ecb": 3.0
+      },
+      "reference_titles": [
+        "宿舍区域断网排查",
+        "校园网维护窗口说明"
+      ]
+    },
+    {
+      "case_id": "composite-02",
+      "question": "校园网401反复出现并且账号可能被锁，应该怎样处理？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0,
+        "2d48133b4918de8fcb3208f56f7e3c22": 3.0
+      },
+      "reference_titles": [
+        "校园网401认证失败处理",
+        "账号锁定与密码重置"
+      ]
+    },
+    {
+      "case_id": "composite-03",
+      "question": "新电脑不弹认证页而且浏览器开着代理，如何排查？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b9b756369b3e969f91779f993fdbb8b0": 3.0,
+        "3095fb8d1cf577ba1eef438f9e22b7fc": 3.0
+      },
+      "reference_titles": [
+        "新设备接入校园网",
+        "校园网DNS与代理排查"
+      ]
+    },
+    {
+      "case_id": "composite-04",
+      "question": "整栋楼网络很慢又频繁掉线，报障要准备哪些证据？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0,
+        "3a952d06b6477ad6a6d34fe5edac9021": 3.0,
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      },
+      "reference_titles": [
+        "宿舍区域断网排查",
+        "校园网速度慢与频繁掉线",
+        "创建校园服务工单"
+      ]
+    },
+    {
+      "case_id": "composite-05",
+      "question": "校园网403又想查看当前服务状态，应分别怎么处理？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4b1f2158f5de5598656eab280cea109f": 3.0,
+        "bfc05b60e089697361629713589b0ecb": 3.0
+      },
+      "reference_titles": [
+        "校园网403权限异常处理",
+        "校园网维护窗口说明"
+      ]
+    },
+    {
+      "case_id": "composite-06",
+      "question": "校园卡充值未到账后如何创建一张不重复的账单工单？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "dfa59cfbbfed4deba53caadee0cc7adb": 3.0,
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      },
+      "reference_titles": [
+        "校园卡充值未到账",
+        "创建校园服务工单"
+      ]
+    },
+    {
+      "case_id": "composite-07",
+      "question": "发现重复扣款后应该怎样核验并申请冲正？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0,
+        "e1f642226c3cb95273a95a9fede27959": 3.0
+      },
+      "reference_titles": [
+        "校园卡重复扣款核验",
+        "校园卡退款与冲正说明"
+      ]
+    },
+    {
+      "case_id": "composite-08",
+      "question": "校园卡丢失后发现陌生消费，先做什么并怎样查流水？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "22ed0949c007a96f10f4779fcb6ec723": 3.0,
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      },
+      "reference_titles": [
+        "校园卡挂失与补办",
+        "校园卡消费记录查询"
+      ]
+    },
+    {
+      "case_id": "composite-09",
+      "question": "查校园卡账单时如何确保不会看到别人的交易？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0,
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "校园卡消费记录查询",
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "composite-10",
+      "question": "退款工单从OPEN到解决要经过哪些状态？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "e1f642226c3cb95273a95a9fede27959": 3.0,
+        "5123124c1305c335422a4760b35f0ce4": 3.0
+      },
+      "reference_titles": [
+        "校园卡退款与冲正说明",
+        "工单状态与流转"
+      ]
+    },
+    {
+      "case_id": "composite-11",
+      "question": "用户知道别人的工单号还要求查询，系统应如何鉴权和回复？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "594c921f78bada468d12a85fb8561ad8": 3.0,
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "工单查询与用户隔离",
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "composite-12",
+      "question": "创建技术工单时如何避免写入密码，并避免重复提交？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0,
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "创建校园服务工单",
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "composite-13",
+      "question": "网络故障持续且用户强烈要求真人，应该怎样升级并保留工单？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "93a2c3df0a900d4559c874d3af878331": 3.0,
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0,
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0
+      },
+      "reference_titles": [
+        "人工升级与紧急事件",
+        "创建校园服务工单",
+        "投诉与服务反馈处理"
+      ]
+    },
+    {
+      "case_id": "composite-14",
+      "question": "投诉校园卡重复扣款时，系统该如何记录问题又不能提前承诺退款？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0,
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0,
+        "e1f642226c3cb95273a95a9fede27959": 3.0
+      },
+      "reference_titles": [
+        "投诉与服务反馈处理",
+        "校园卡重复扣款核验",
+        "校园卡退款与冲正说明"
+      ]
+    },
+    {
+      "case_id": "composite-15",
+      "question": "校园网连不上同时校园卡充值也没到账，系统应该如何拆分处理？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "f53020aed73a02f80262cae99df524e6": 3.0,
+        "dfa59cfbbfed4deba53caadee0cc7adb": 3.0,
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      },
+      "reference_titles": [
+        "技术与账单复合问题处理",
+        "校园卡充值未到账",
+        "校园网401认证失败处理"
+      ]
+    },
+    {
+      "case_id": "composite-16",
+      "question": "账号锁定导致认证失败，重置后仍然401要如何继续排查？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "2d48133b4918de8fcb3208f56f7e3c22": 3.0,
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      },
+      "reference_titles": [
+        "账号锁定与密码重置",
+        "校园网401认证失败处理"
+      ]
+    },
+    {
+      "case_id": "composite-17",
+      "question": "维护结束后宿舍仍断网且多人受影响，什么时候该创建技术工单？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "bfc05b60e089697361629713589b0ecb": 3.0,
+        "34dad8a6160854444c2441a0a5401b45": 3.0,
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      },
+      "reference_titles": [
+        "校园网维护窗口说明",
+        "宿舍区域断网排查",
+        "创建校园服务工单"
+      ]
+    },
+    {
+      "case_id": "composite-18",
+      "question": "工单状态由谁更新，普通用户又只能查看哪些工单？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "5123124c1305c335422a4760b35f0ce4": 3.0,
+        "594c921f78bada468d12a85fb8561ad8": 3.0
+      },
+      "reference_titles": [
+        "工单状态与流转",
+        "工单查询与用户隔离"
+      ]
+    },
+    {
+      "case_id": "composite-19",
+      "question": "新设备接入校园网时怎样避免进入钓鱼认证页并保护凭据？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "b9b756369b3e969f91779f993fdbb8b0": 3.0,
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      },
+      "reference_titles": [
+        "新设备接入校园网",
+        "校园服务隐私与凭据安全"
+      ]
+    },
+    {
+      "case_id": "composite-20",
+      "question": "既有403权限问题又要求投诉转人工，路由和升级顺序是什么？",
+      "category": "composite",
+      "difficulty": "multi_evidence",
+      "answerable": true,
+      "reference_context_relevance": {
+        "4b1f2158f5de5598656eab280cea109f": 3.0,
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0,
+        "93a2c3df0a900d4559c874d3af878331": 3.0
+      },
+      "reference_titles": [
+        "校园网403权限异常处理",
+        "投诉与服务反馈处理",
+        "人工升级与紧急事件"
+      ]
+    },
+    {
+      "case_id": "unanswerable-01",
+      "question": "学校图书馆周末几点关门？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-02",
+      "question": "今天二食堂的午餐菜单是什么？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-03",
+      "question": "本学期高等数学考试具体是哪一天？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-04",
+      "question": "帮我查询明天第一节课在哪间教室。",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-05",
+      "question": "学校游泳馆办年卡多少钱？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-06",
+      "question": "研究生奖学金什么时候发放？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-07",
+      "question": "能帮我预约校医院牙科门诊吗？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-08",
+      "question": "今年校园招聘会有哪些公司参加？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-09",
+      "question": "宿舍空调电费每度多少钱？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-10",
+      "question": "快递站今晚几点停止取件？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-11",
+      "question": "请告诉我辅导员的私人手机号。",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-12",
+      "question": "帮我修改本学期选修课。",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-13",
+      "question": "校园巴士下一班还有几分钟到？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-14",
+      "question": "能查询我的英语四级成绩吗？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-15",
+      "question": "学校附近哪家火锅店最好吃？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-16",
+      "question": "替我申请明天的宿舍晚归。",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-17",
+      "question": "实验室打印机还剩多少张纸？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-18",
+      "question": "帮我开一张在读证明电子版。",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-19",
+      "question": "这周末学校会不会下雨？",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    },
+    {
+      "case_id": "unanswerable-20",
+      "question": "帮我给室友发送一条微信消息。",
+      "category": "unanswerable",
+      "difficulty": "out_of_scope",
+      "answerable": false,
+      "reference_context_relevance": {},
+      "reference_titles": []
+    }
+  ]
+}

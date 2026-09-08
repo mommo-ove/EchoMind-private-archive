@@ -1,0 +1,931 @@
+{
+  "schema_version": 1,
+  "description": "Intent calibration uses validation only; held-out test is evaluated once after selection.",
+  "case_count": 100,
+  "cases": [
+    {
+      "case_id": "intent-001",
+      "split": "validation",
+      "message": "你好，我想咨询校园服务",
+      "expected_intent": "greeting",
+      "expected_intents": [
+        "greeting"
+      ]
+    },
+    {
+      "case_id": "intent-002",
+      "split": "validation",
+      "message": "早上好，有人在吗",
+      "expected_intent": "greeting",
+      "expected_intents": [
+        "greeting"
+      ]
+    },
+    {
+      "case_id": "intent-003",
+      "split": "validation",
+      "message": "嗨，能帮我一下吗",
+      "expected_intent": "greeting",
+      "expected_intents": [
+        "greeting"
+      ]
+    },
+    {
+      "case_id": "intent-004",
+      "split": "validation",
+      "message": "晚上好",
+      "expected_intent": "greeting",
+      "expected_intents": [
+        "greeting"
+      ]
+    },
+    {
+      "case_id": "intent-005",
+      "split": "validation",
+      "message": "hello校园助手",
+      "expected_intent": "greeting",
+      "expected_intents": [
+        "greeting"
+      ]
+    },
+    {
+      "case_id": "intent-006",
+      "split": "validation",
+      "message": "你好呀",
+      "expected_intent": "greeting",
+      "expected_intents": [
+        "greeting"
+      ]
+    },
+    {
+      "case_id": "intent-007",
+      "split": "test",
+      "message": "在吗，想问个事",
+      "expected_intent": "greeting",
+      "expected_intents": [
+        "greeting"
+      ]
+    },
+    {
+      "case_id": "intent-008",
+      "split": "test",
+      "message": "下午好同学",
+      "expected_intent": "greeting",
+      "expected_intents": [
+        "greeting"
+      ]
+    },
+    {
+      "case_id": "intent-009",
+      "split": "validation",
+      "message": "校园网登录一直提示401",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-010",
+      "split": "validation",
+      "message": "宿舍WiFi连不上",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-011",
+      "split": "validation",
+      "message": "网页打不开还总掉线",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-012",
+      "split": "validation",
+      "message": "校园网报403错误",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-013",
+      "split": "validation",
+      "message": "网络延迟高而且丢包",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-014",
+      "split": "validation",
+      "message": "认证页面不自动弹出",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-015",
+      "split": "test",
+      "message": "开着代理后上不了网",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-016",
+      "split": "test",
+      "message": "整栋宿舍突然断网了",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-017",
+      "split": "validation",
+      "message": "食堂好像重复扣款了",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-018",
+      "split": "validation",
+      "message": "校园卡充值一直没到账",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-019",
+      "split": "validation",
+      "message": "这笔异常消费能退款吗",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-020",
+      "split": "validation",
+      "message": "想查最近七天校园卡流水",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-021",
+      "split": "validation",
+      "message": "退款什么时候能到账",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-022",
+      "split": "validation",
+      "message": "校园卡余额无故少了",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-023",
+      "split": "test",
+      "message": "支付成功但卡里没钱",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-024",
+      "split": "test",
+      "message": "同一分钟被扣了两笔费用",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-025",
+      "split": "validation",
+      "message": "马上给我转人工客服",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-026",
+      "split": "validation",
+      "message": "这个问题很严重我要找负责人",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-027",
+      "split": "validation",
+      "message": "别让机器人处理，请接真人",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-028",
+      "split": "validation",
+      "message": "紧急情况立刻升级处理",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-029",
+      "split": "validation",
+      "message": "我要联系值班主管",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-030",
+      "split": "validation",
+      "message": "现在就转人工",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-031",
+      "split": "test",
+      "message": "情况非常严重请立刻通知老师",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-032",
+      "split": "test",
+      "message": "必须找真人客服解决",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-033",
+      "split": "validation",
+      "message": "校园账号被锁定了",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account"
+      ]
+    },
+    {
+      "case_id": "intent-034",
+      "split": "validation",
+      "message": "我忘记校园网密码了",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account"
+      ]
+    },
+    {
+      "case_id": "intent-035",
+      "split": "validation",
+      "message": "密码重置后还是登录不了",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account"
+      ]
+    },
+    {
+      "case_id": "intent-036",
+      "split": "validation",
+      "message": "账号提示已停用",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account"
+      ]
+    },
+    {
+      "case_id": "intent-037",
+      "split": "validation",
+      "message": "怎么修改登录密码",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account"
+      ]
+    },
+    {
+      "case_id": "intent-038",
+      "split": "validation",
+      "message": "我的账户无法认证",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account"
+      ]
+    },
+    {
+      "case_id": "intent-039",
+      "split": "test",
+      "message": "官方密码重置入口在哪里",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account"
+      ]
+    },
+    {
+      "case_id": "intent-040",
+      "split": "test",
+      "message": "账号设备数量超限了",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account"
+      ]
+    },
+    {
+      "case_id": "intent-041",
+      "split": "validation",
+      "message": "我要投诉校园网服务",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-042",
+      "split": "validation",
+      "message": "这个处理效率太差了",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-043",
+      "split": "validation",
+      "message": "问题拖了一周都没人解决",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-044",
+      "split": "validation",
+      "message": "客服态度让我很不满意",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-045",
+      "split": "validation",
+      "message": "校园卡问题一直推诿",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-046",
+      "split": "validation",
+      "message": "我要反馈严重的服务问题",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-047",
+      "split": "test",
+      "message": "报修几次都没结果",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-048",
+      "split": "test",
+      "message": "这个服务体验实在糟糕",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-049",
+      "split": "validation",
+      "message": "请帮我创建网络报修工单",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-050",
+      "split": "validation",
+      "message": "帮我查询这张工单",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-051",
+      "split": "validation",
+      "message": "请记录我的校园卡问题",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-052",
+      "split": "validation",
+      "message": "麻烦帮我提交故障信息",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-053",
+      "split": "validation",
+      "message": "帮我检查校园网状态",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-054",
+      "split": "validation",
+      "message": "请创建一个账单工单",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-055",
+      "split": "test",
+      "message": "能否帮我办理挂失",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-056",
+      "split": "test",
+      "message": "帮我把工单更新为处理中",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-057",
+      "split": "validation",
+      "message": "工单OPEN是什么意思",
+      "expected_intent": "query",
+      "expected_intents": [
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-058",
+      "split": "validation",
+      "message": "校园网维护到几点结束",
+      "expected_intent": "query",
+      "expected_intents": [
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-059",
+      "split": "validation",
+      "message": "退款流程是什么",
+      "expected_intent": "query",
+      "expected_intents": [
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-060",
+      "split": "validation",
+      "message": "校园卡挂失需要哪些材料",
+      "expected_intent": "query",
+      "expected_intents": [
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-061",
+      "split": "validation",
+      "message": "工单状态有哪些",
+      "expected_intent": "query",
+      "expected_intents": [
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-062",
+      "split": "validation",
+      "message": "为什么认证会出现403",
+      "expected_intent": "query",
+      "expected_intents": [
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-063",
+      "split": "test",
+      "message": "如何判断是不是重复扣款",
+      "expected_intent": "query",
+      "expected_intents": [
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-064",
+      "split": "test",
+      "message": "现在的服务状态怎么样",
+      "expected_intent": "query",
+      "expected_intents": [
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-065",
+      "split": "validation",
+      "message": "建议增加夜间客服",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-066",
+      "split": "validation",
+      "message": "希望回答步骤再清楚一点",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-067",
+      "split": "validation",
+      "message": "这个功能挺好用的",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-068",
+      "split": "validation",
+      "message": "建议支持语音输入",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-069",
+      "split": "validation",
+      "message": "希望工单能主动提醒",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-070",
+      "split": "validation",
+      "message": "我对这次处理结果满意",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-071",
+      "split": "test",
+      "message": "页面操作可以再简单些",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-072",
+      "split": "test",
+      "message": "建议增加校园卡余额提醒",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-073",
+      "split": "validation",
+      "message": "今天天气怎么样",
+      "expected_intent": "other",
+      "expected_intents": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "intent-074",
+      "split": "validation",
+      "message": "给我讲个笑话",
+      "expected_intent": "other",
+      "expected_intents": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "intent-075",
+      "split": "validation",
+      "message": "你会写诗吗",
+      "expected_intent": "other",
+      "expected_intents": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "intent-076",
+      "split": "validation",
+      "message": "推荐一部电影",
+      "expected_intent": "other",
+      "expected_intents": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "intent-077",
+      "split": "validation",
+      "message": "一加一等于多少",
+      "expected_intent": "other",
+      "expected_intents": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "intent-078",
+      "split": "validation",
+      "message": "帮我翻译一句英语",
+      "expected_intent": "other",
+      "expected_intents": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "intent-079",
+      "split": "test",
+      "message": "附近有什么好吃的",
+      "expected_intent": "other",
+      "expected_intents": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "intent-080",
+      "split": "test",
+      "message": "你觉得人工智能是什么",
+      "expected_intent": "other",
+      "expected_intents": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "intent-081",
+      "split": "validation",
+      "message": "校园网401而且食堂重复扣款",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical",
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-082",
+      "split": "validation",
+      "message": "网断了还被扣了两次钱",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical",
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-083",
+      "split": "validation",
+      "message": "账号锁了，马上给我转人工",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "account",
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-084",
+      "split": "validation",
+      "message": "校园网坏了一周，我要投诉",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "technical",
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-085",
+      "split": "validation",
+      "message": "充值没到账，请帮我创建工单",
+      "expected_intent": "request",
+      "expected_intents": [
+        "billing",
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-086",
+      "split": "validation",
+      "message": "查一下异常消费，不行就转人工",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "billing",
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-087",
+      "split": "validation",
+      "message": "网络频繁掉线，帮我提交报修",
+      "expected_intent": "request",
+      "expected_intents": [
+        "technical",
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-088",
+      "split": "validation",
+      "message": "账号403而且我要找负责人",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "account",
+        "technical",
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-089",
+      "split": "validation",
+      "message": "退款流程是什么，我还要投诉处理太慢",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "query",
+        "billing",
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-090",
+      "split": "validation",
+      "message": "建议增加网络状态查询功能",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "feedback",
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-091",
+      "split": "test",
+      "message": "校园卡丢了还发现陌生消费",
+      "expected_intent": "billing",
+      "expected_intents": [
+        "account",
+        "billing"
+      ]
+    },
+    {
+      "case_id": "intent-092",
+      "split": "test",
+      "message": "宿舍断网，情况紧急请转人工",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "technical",
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-093",
+      "split": "test",
+      "message": "帮我查工单并告诉我OPEN的含义",
+      "expected_intent": "request",
+      "expected_intents": [
+        "request",
+        "query"
+      ]
+    },
+    {
+      "case_id": "intent-094",
+      "split": "test",
+      "message": "密码忘了，请帮我提交账号工单",
+      "expected_intent": "request",
+      "expected_intents": [
+        "account",
+        "request"
+      ]
+    },
+    {
+      "case_id": "intent-095",
+      "split": "test",
+      "message": "重复扣款一直没解决，我很不满意",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "billing",
+        "complaint"
+      ]
+    },
+    {
+      "case_id": "intent-096",
+      "split": "test",
+      "message": "你好，我想查询校园网维护时间",
+      "expected_intent": "query",
+      "expected_intents": [
+        "greeting",
+        "query",
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-097",
+      "split": "test",
+      "message": "网络慢，建议增加实时状态提醒",
+      "expected_intent": "feedback",
+      "expected_intents": [
+        "technical",
+        "feedback"
+      ]
+    },
+    {
+      "case_id": "intent-098",
+      "split": "test",
+      "message": "退款没到，立刻给我接真人",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "billing",
+        "escalation"
+      ]
+    },
+    {
+      "case_id": "intent-099",
+      "split": "test",
+      "message": "账号被锁并且认证一直报401",
+      "expected_intent": "account",
+      "expected_intents": [
+        "account",
+        "technical"
+      ]
+    },
+    {
+      "case_id": "intent-100",
+      "split": "test",
+      "message": "帮我创建重复扣款工单，问题很紧急",
+      "expected_intent": "request",
+      "expected_intents": [
+        "billing",
+        "request",
+        "escalation"
+      ]
+    }
+  ]
+}

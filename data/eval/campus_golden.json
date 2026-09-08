@@ -1,0 +1,487 @@
+{
+  "intent_cases": [
+    {
+      "message": "你好，我想咨询校园服务",
+      "expected_intent": "greeting"
+    },
+    {
+      "message": "早上好，有人在吗",
+      "expected_intent": "greeting"
+    },
+    {
+      "message": "校园网登录一直提示401",
+      "expected_intent": "technical"
+    },
+    {
+      "message": "宿舍WiFi连上以后所有网页都打不开",
+      "expected_intent": "technical"
+    },
+    {
+      "message": "认证页面反复跳回登录页",
+      "expected_intent": "technical"
+    },
+    {
+      "message": "校园卡为什么连续扣了两次12.8元",
+      "expected_intent": "billing"
+    },
+    {
+      "message": "充值显示成功但是校园卡余额没变化",
+      "expected_intent": "billing"
+    },
+    {
+      "message": "这笔异常扣款可以退款吗",
+      "expected_intent": "billing"
+    },
+    {
+      "message": "帮我创建一个网络报修工单",
+      "expected_intent": "request"
+    },
+    {
+      "message": "请帮我查询工单处理进度",
+      "expected_intent": "query"
+    },
+    {
+      "message": "我要修改校园账户绑定邮箱",
+      "expected_intent": "account"
+    },
+    {
+      "message": "请注销我的旧账户",
+      "expected_intent": "account"
+    },
+    {
+      "message": "已经三天没人处理，这服务太差了",
+      "expected_intent": "complaint"
+    },
+    {
+      "message": "报修后一直没有回复，我很不满意",
+      "expected_intent": "complaint"
+    },
+    {
+      "message": "马上给我转人工客服",
+      "expected_intent": "escalation"
+    },
+    {
+      "message": "这个问题你处理不了，找负责人",
+      "expected_intent": "escalation"
+    },
+    {
+      "message": "谢谢，步骤写得很清楚",
+      "expected_intent": "feedback"
+    },
+    {
+      "message": "这次处理得很好，给个好评",
+      "expected_intent": "feedback"
+    },
+    {
+      "message": "校园网维护一般在什么时候",
+      "expected_intent": "query"
+    },
+    {
+      "message": "请协助我挂失校园卡",
+      "expected_intent": "request"
+    },
+    {
+      "message": "校园网一直报401而且校园卡重复扣款",
+      "expected_intent": "technical",
+      "expected_intents": [
+        "technical",
+        "billing"
+      ]
+    },
+    {
+      "message": "校园网无法登录，我现在就要转人工处理",
+      "expected_intent": "escalation",
+      "expected_intents": [
+        "escalation",
+        "technical"
+      ]
+    },
+    {
+      "message": "校园卡重复扣款三天没人处理，服务太差了",
+      "expected_intent": "complaint",
+      "expected_intents": [
+        "complaint",
+        "billing"
+      ]
+    }
+  ],
+  "dialog_cases": [
+    {
+      "question": "你好",
+      "expected_intents": [
+        "greeting"
+      ],
+      "expected_agents": [
+        "general"
+      ],
+      "expect_knowledge": false
+    },
+    {
+      "question": "校园网401应该怎么排查",
+      "expected_intents": [
+        "technical"
+      ],
+      "expected_agents": [
+        "technical"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】校园网登录出现401通常表示认证状态无效、账号凭据不匹配或旧登录会话未清理。建议先记录发生时间和设备类型，退出认证页面并断开校园WiFi，清除浏览器中旧认证状态后重新连接。不要向客服发送密码、验证码或完整Token。",
+      "reference_context_ids": [
+        "a32fdfcd136bb0c6df13a0b7cf12f73f"
+      ],
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      }
+    },
+    {
+      "question": "帮我看看校园网现在是否正常",
+      "expected_intents": [
+        "technical"
+      ],
+      "expected_agents": [
+        "technical"
+      ],
+      "expected_tools": [
+        "query_network_status"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】宿舍断网应先确认影响范围：仅个人设备、同一寝室、整层楼或整栋楼。仅个人设备异常时检查飞行模式、网卡、代理和旧认证状态；多人同时异常时应查询校园网服务状态，并记录宿舍楼、楼层、开始时间和指示灯情况。大面积持续故障属于升级场景，可创建工单并通知网络维护人员。",
+      "reference_context_ids": [
+        "34dad8a6160854444c2441a0a5401b45"
+      ],
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0
+      }
+    },
+    {
+      "question": "宿舍整层楼都断网了，应该收集什么信息",
+      "expected_intents": [
+        "technical"
+      ],
+      "expected_agents": [
+        "technical"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】宿舍断网应先确认影响范围：仅个人设备、同一寝室、整层楼或整栋楼。仅个人设备异常时检查飞行模式、网卡、代理和旧认证状态；多人同时异常时应查询校园网服务状态，并记录宿舍楼、楼层、开始时间和指示灯情况。大面积持续故障属于升级场景，可创建工单并通知网络维护人员。",
+      "reference_context_ids": [
+        "34dad8a6160854444c2441a0a5401b45"
+      ],
+      "reference_context_relevance": {
+        "34dad8a6160854444c2441a0a5401b45": 3.0
+      }
+    },
+    {
+      "question": "校园网连上但网页打不开",
+      "expected_intents": [
+        "technical"
+      ],
+      "expected_agents": [
+        "technical"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】能够连接WiFi但网页打不开时，可先关闭系统代理、VPN和浏览器代理扩展，再尝试自动获取DNS。若只有一个网站无法访问，优先判断目标站点故障；若所有网站都失败，可执行断开重连并记录错误提示。不要随意安装来源不明的证书或网络修复软件。",
+      "reference_context_ids": [
+        "3095fb8d1cf577ba1eef438f9e22b7fc"
+      ],
+      "reference_context_relevance": {
+        "3095fb8d1cf577ba1eef438f9e22b7fc": 3.0
+      }
+    },
+    {
+      "question": "查询我最近7天的校园卡消费",
+      "user_id": "demo_user_01",
+      "expected_intents": [
+        "billing"
+      ],
+      "expected_agents": [
+        "billing"
+      ],
+      "expected_tools": [
+        "query_campus_card"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】消费记录查询应限定为当前已认证用户，并允许按最近若干天筛选。回复时应分别展示发生时间、商户和金额，不得泄露其他用户的交易。若没有查到记录，应说明查询窗口和结果为空，不要编造消费。",
+      "reference_context_ids": [
+        "7eef1e454f12160e8ce247ffae20e5b1"
+      ],
+      "reference_context_relevance": {
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      }
+    },
+    {
+      "question": "校园卡两笔12.8元是不是重复扣款",
+      "user_id": "demo_user_01",
+      "expected_intents": [
+        "billing"
+      ],
+      "expected_agents": [
+        "billing"
+      ],
+      "expected_tools": [
+        "query_campus_card"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】发现疑似重复扣款时，应对比两笔交易的时间、金额、商户和交易标识。金额相同并不一定代表重复扣款，也可能是两次独立消费。系统可以查询当前用户的模拟交易记录，但不能在未核验前承诺退款。\n【演示知识】消费记录查询应限定为当前已认证用户，并允许按最近若干天筛选。回复时应分别展示发生时间、商户和金额，不得泄露其他用户的交易。若没有查到记录，应说明查询窗口和结果为空，不要编造消费。",
+      "reference_context_ids": [
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b",
+        "7eef1e454f12160e8ce247ffae20e5b1"
+      ],
+      "reference_context_relevance": {
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0,
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      }
+    },
+    {
+      "question": "校园卡充值成功但余额没到账怎么办",
+      "expected_intents": [
+        "billing"
+      ],
+      "expected_agents": [
+        "billing"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】充值未到账时需收集充值时间、金额、支付渠道和交易状态摘要，不得索取支付密码、短信验证码或完整银行卡号。先确认支付渠道是否已扣款，再区分支付处理中、支付成功但校园卡未入账、支付失败三种情况。涉及真实资金调整必须转人工或财务核验，不能由Agent直接承诺补款。",
+      "reference_context_ids": [
+        "dfa59cfbbfed4deba53caadee0cc7adb"
+      ],
+      "reference_context_relevance": {
+        "dfa59cfbbfed4deba53caadee0cc7adb": 3.0
+      }
+    },
+    {
+      "question": "校园卡丢了怎么挂失",
+      "expected_intents": [
+        "request"
+      ],
+      "expected_agents": [
+        "general"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】校园卡丢失后应尽快通过学校官方渠道挂失，减少被冒用风险。Agent可以说明流程，但没有真实卡务系统权限时不能声称已经挂失。补办通常需要身份核验，并可能涉及工本费和线下领取。",
+      "reference_context_ids": [
+        "22ed0949c007a96f10f4779fcb6ec723"
+      ],
+      "reference_context_relevance": {
+        "22ed0949c007a96f10f4779fcb6ec723": 3.0
+      }
+    },
+    {
+      "question": "工单有哪些状态",
+      "expected_intents": [
+        "query"
+      ],
+      "expected_agents": [
+        "general"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】演示工单状态包括OPEN、PROCESSING和RESOLVED。OPEN表示已受理但尚未开始处理，PROCESSING表示处理中，RESOLVED表示已经完成。允许的流转为OPEN到PROCESSING，再到RESOLVED；已解决工单不能直接回到OPEN。",
+      "reference_context_ids": [
+        "5123124c1305c335422a4760b35f0ce4"
+      ],
+      "reference_context_relevance": {
+        "5123124c1305c335422a4760b35f0ce4": 3.0
+      }
+    },
+    {
+      "question": "马上给我转人工",
+      "expected_intents": [
+        "escalation"
+      ],
+      "expected_agents": [
+        "general"
+      ],
+      "expect_knowledge": false
+    },
+    {
+      "question": "生产认证服务全部不可用，立刻升级处理",
+      "expected_intents": [
+        "escalation"
+      ],
+      "expected_agents": [
+        "general"
+      ],
+      "expect_knowledge": false
+    },
+    {
+      "question": "为什么不能把密码发给客服",
+      "expected_intents": [
+        "query"
+      ],
+      "expected_agents": [
+        "general"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】客服和Agent不得索取或输出密码、短信验证码、支付密码、完整银行卡号、私钥、API Key和完整Token。身份相关数据必须来自后端可信上下文，不能由模型自行填写。日志、工具轨迹和评测数据应脱敏，演示环境只使用虚构用户和合成交易，不得导入真实学生隐私数据。",
+      "reference_context_ids": [
+        "6de07143bbf7f99e748ce57c471736a9"
+      ],
+      "reference_context_relevance": {
+        "6de07143bbf7f99e748ce57c471736a9": 3.0
+      }
+    },
+    {
+      "question": "我想投诉报修三天没人处理",
+      "expected_intents": [
+        "complaint"
+      ],
+      "expected_agents": [
+        "general"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】处理投诉时应先确认用户最关心的影响和期望结果，再记录事件时间、涉及服务和已经处理的步骤。不能与用户争辩，也不能在未核验前承诺赔偿。一般建议可由GeneralAgent说明，涉及账单、权限、安全或持续故障时应转专业Agent；用户坚持人工时标记升级并保留上下文摘要。",
+      "reference_context_ids": [
+        "2baa3c8462d162f0b0c5af4d253e3756"
+      ],
+      "reference_context_relevance": {
+        "2baa3c8462d162f0b0c5af4d253e3756": 3.0
+      }
+    },
+    {
+      "question": "谢谢，你的排查步骤很清楚",
+      "expected_intents": [
+        "feedback"
+      ],
+      "expected_agents": [
+        "general"
+      ],
+      "expect_knowledge": false
+    },
+    {
+      "turns": [
+        "校园网登录失败",
+        "错误码是401，发生在3号宿舍楼"
+      ],
+      "expected_intents": [
+        "technical",
+        "technical"
+      ],
+      "expected_agents": [
+        "technical",
+        "technical"
+      ],
+      "expect_knowledge": true,
+      "reference_answers": [
+        "【演示知识】校园网登录出现401通常表示认证状态无效、账号凭据不匹配或旧登录会话未清理。建议先记录发生时间和设备类型，退出认证页面并断开校园WiFi，清除浏览器中旧认证状态后重新连接。不要向客服发送密码、验证码或完整Token。",
+        "【演示知识】校园网登录出现401通常表示认证状态无效、账号凭据不匹配或旧登录会话未清理。建议先记录发生时间和设备类型，退出认证页面并断开校园WiFi，清除浏览器中旧认证状态后重新连接。不要向客服发送密码、验证码或完整Token。"
+      ],
+      "reference_context_ids": [
+        "a32fdfcd136bb0c6df13a0b7cf12f73f"
+      ],
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      }
+    },
+    {
+      "turns": [
+        "校园卡扣费不对",
+        "最近两笔都是12.8元"
+      ],
+      "user_id": "demo_user_01",
+      "expected_intents": [
+        "billing",
+        "billing"
+      ],
+      "expected_agents": [
+        "billing",
+        "billing"
+      ],
+      "expected_tools": [
+        "query_campus_card"
+      ],
+      "expect_knowledge": true,
+      "reference_answers": [
+        "【演示知识】发现疑似重复扣款时，应对比两笔交易的时间、金额、商户和交易标识。金额相同并不一定代表重复扣款，也可能是两次独立消费。系统可以查询当前用户的模拟交易记录，但不能在未核验前承诺退款。",
+        "【演示知识】消费记录查询应限定为当前已认证用户，并允许按最近若干天筛选。回复时应分别展示发生时间、商户和金额，不得泄露其他用户的交易。若没有查到记录，应说明查询窗口和结果为空，不要编造消费。"
+      ],
+      "reference_context_ids": [
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b",
+        "7eef1e454f12160e8ce247ffae20e5b1"
+      ],
+      "reference_context_relevance": {
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0,
+        "7eef1e454f12160e8ce247ffae20e5b1": 3.0
+      }
+    },
+    {
+      "turns": [
+        "宿舍校园网一直认证失败",
+        "仍然提示401，请创建技术工单"
+      ],
+      "expected_intents": [
+        "technical",
+        "technical"
+      ],
+      "expected_agents": [
+        "technical",
+        "technical"
+      ],
+      "expected_tools": [
+        "create_ticket"
+      ],
+      "expect_ticket": true,
+      "expect_knowledge": true,
+      "reference_answers": [
+        "【演示知识】校园网登录出现401通常表示认证状态无效、账号凭据不匹配或旧登录会话未清理。建议先记录发生时间和设备类型，退出认证页面并断开校园WiFi，清除浏览器中旧认证状态后重新连接。不要向客服发送密码、验证码或完整Token。",
+        "【演示知识】创建工单前应确认问题类别、简短标题和可复现描述，并取得用户明确同意。描述建议包含发生时间、影响范围、错误码和已经尝试的步骤，不应包含密码、Token或验证码。创建请求必须携带后端生成的幂等键，重复提交同一请求时返回原工单，避免产生重复记录。"
+      ],
+      "reference_context_ids": [
+        "a32fdfcd136bb0c6df13a0b7cf12f73f",
+        "4ac37edf665ba6ca2700d2a9b11c9a2e"
+      ],
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0,
+        "4ac37edf665ba6ca2700d2a9b11c9a2e": 3.0
+      }
+    },
+    {
+      "turns": [
+        "回答尽量简洁并给步骤",
+        "校园网401怎么处理"
+      ],
+      "expected_intents": [
+        "request",
+        "technical"
+      ],
+      "expected_agents": [
+        "general",
+        "technical"
+      ],
+      "expect_knowledge": true,
+      "reference_answers": [
+        "【演示知识】校园网登录出现401通常表示认证状态无效、账号凭据不匹配或旧登录会话未清理。建议先记录发生时间和设备类型，退出认证页面并断开校园WiFi，清除浏览器中旧认证状态后重新连接。不要向客服发送密码、验证码或完整Token。",
+        "【演示知识】校园网登录出现401通常表示认证状态无效、账号凭据不匹配或旧登录会话未清理。建议先记录发生时间和设备类型，退出认证页面并断开校园WiFi，清除浏览器中旧认证状态后重新连接。不要向客服发送密码、验证码或完整Token。"
+      ],
+      "reference_context_ids": [
+        "a32fdfcd136bb0c6df13a0b7cf12f73f"
+      ],
+      "reference_context_relevance": {
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0
+      }
+    },
+    {
+      "question": "校园网401而且校园卡重复扣款，请分别处理",
+      "expected_intents": [
+        "technical"
+      ],
+      "expected_agents": [
+        "technical"
+      ],
+      "expected_tools": [
+        "query_network_status",
+        "query_campus_card"
+      ],
+      "expect_knowledge": true,
+      "reference_answer": "【演示知识】一句话同时出现登录故障和重复扣款时，应分别识别technical与billing标签。两个专业Agent可以并行处理：TechnicalAgent负责认证和网络排查，BillingAgent负责查询模拟交易和说明核验流程。最终答案要按领域分段合并，避免重复提问；若同时包含强烈转人工诉求，则升级流程优先于普通并行协作。\n【演示知识】校园网登录出现401通常表示认证状态无效、账号凭据不匹配或旧登录会话未清理。建议先记录发生时间和设备类型，退出认证页面并断开校园WiFi，清除浏览器中旧认证状态后重新连接。不要向客服发送密码、验证码或完整Token。\n【演示知识】发现疑似重复扣款时，应对比两笔交易的时间、金额、商户和交易标识。金额相同并不一定代表重复扣款，也可能是两次独立消费。系统可以查询当前用户的模拟交易记录，但不能在未核验前承诺退款。",
+      "reference_context_ids": [
+        "f53020aed73a02f80262cae99df524e6",
+        "a32fdfcd136bb0c6df13a0b7cf12f73f",
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b"
+      ],
+      "reference_context_relevance": {
+        "f53020aed73a02f80262cae99df524e6": 3.0,
+        "a32fdfcd136bb0c6df13a0b7cf12f73f": 3.0,
+        "b72bdc6b05df1e79fc5510ba6d1cfc6b": 3.0
+      }
+    }
+  ]
+}
